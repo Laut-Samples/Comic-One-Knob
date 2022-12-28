@@ -8,11 +8,11 @@
     <key>CFBundleIconFile</key>
     <string></string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.Comic_OneKnob</string>
+    <string>com.ComicVst.ComicCrusher</string>
     <key>CFBundleName</key>
-    <string>Comic_OneKnob</string>
+    <string>Comic Crusher</string>
     <key>CFBundleDisplayName</key>
-    <string>Comic_OneKnob</string>
+    <string>Comic Crusher</string>
     <key>CFBundlePackageType</key>
     <string>BNDL</string>
     <key>CFBundleSignature</key>
@@ -29,11 +29,11 @@
     <array>
       <dict>
         <key>name</key>
-        <string>yourcompany: Comic_OneKnob</string>
+        <string>ComicVst: Comic Crusher</string>
         <key>description</key>
-        <string>Comic_OneKnob</string>
+        <string>Comic Crusher</string>
         <key>factoryFunction</key>
-        <string>Comic_OneKnobAUFactory</string>
+        <string>ComicCrusherAUFactory</string>
         <key>manufacturer</key>
         <string>Manu</string>
         <key>type</key>

@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio Version 17
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Comic Crusher - Standalone Plugin", "Comic Crusher_StandalonePlugin.vcxproj", "{954951FF-0B42-4BB7-DC7F-A3DEFAFAB805}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B692F19A-DD40-69DE-0492-9903A84F7FF2} = {B692F19A-DD40-69DE-0492-9903A84F7FF2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Comic Crusher - VST", "Comic Crusher_VST.vcxproj", "{973638CF-C0B4-A401-0D78-BCF4E220D344}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B692F19A-DD40-69DE-0492-9903A84F7FF2} = {B692F19A-DD40-69DE-0492-9903A84F7FF2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Comic Crusher - VST3", "Comic Crusher_VST3.vcxproj", "{9C4A474D-60C3-8604-2C7B-B57DDC22290C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B692F19A-DD40-69DE-0492-9903A84F7FF2} = {B692F19A-DD40-69DE-0492-9903A84F7FF2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Comic Crusher - Shared Code", "Comic Crusher_SharedCode.vcxproj", "{B692F19A-DD40-69DE-0492-9903A84F7FF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{973638CF-C0B4-A401-0D78-BCF4E220D344}.Debug|x64.ActiveCfg = Debug|x64
+		{973638CF-C0B4-A401-0D78-BCF4E220D344}.Debug|x64.Build.0 = Debug|x64
+		{973638CF-C0B4-A401-0D78-BCF4E220D344}.Release|x64.ActiveCfg = Release|x64
+		{973638CF-C0B4-A401-0D78-BCF4E220D344}.Release|x64.Build.0 = Release|x64
+		{9C4A474D-60C3-8604-2C7B-B57DDC22290C}.Debug|x64.ActiveCfg = Debug|x64
+		{9C4A474D-60C3-8604-2C7B-B57DDC22290C}.Debug|x64.Build.0 = Debug|x64
+		{9C4A474D-60C3-8604-2C7B-B57DDC22290C}.Release|x64.ActiveCfg = Release|x64
+		{9C4A474D-60C3-8604-2C7B-B57DDC22290C}.Release|x64.Build.0 = Release|x64
+		{954951FF-0B42-4BB7-DC7F-A3DEFAFAB805}.Debug|x64.ActiveCfg = Debug|x64
+		{954951FF-0B42-4BB7-DC7F-A3DEFAFAB805}.Debug|x64.Build.0 = Debug|x64
+		{954951FF-0B42-4BB7-DC7F-A3DEFAFAB805}.Release|x64.ActiveCfg = Release|x64
+		{954951FF-0B42-4BB7-DC7F-A3DEFAFAB805}.Release|x64.Build.0 = Release|x64
+		{B692F19A-DD40-69DE-0492-9903A84F7FF2}.Debug|x64.ActiveCfg = Debug|x64
+		{B692F19A-DD40-69DE-0492-9903A84F7FF2}.Debug|x64.Build.0 = Debug|x64
+		{B692F19A-DD40-69DE-0492-9903A84F7FF2}.Release|x64.ActiveCfg = Release|x64
+		{B692F19A-DD40-69DE-0492-9903A84F7FF2}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

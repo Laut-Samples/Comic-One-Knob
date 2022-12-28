@@ -8,11 +8,11 @@
     <key>CFBundleIconFile</key>
     <string></string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.Comic_OneKnob</string>
+    <string>com.ComicVst.ComicCrusher</string>
     <key>CFBundleName</key>
-    <string>Comic_OneKnob</string>
+    <string>Comic Crusher</string>
     <key>CFBundleDisplayName</key>
-    <string>Comic_OneKnob</string>
+    <string>Comic Crusher</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleSignature</key>
