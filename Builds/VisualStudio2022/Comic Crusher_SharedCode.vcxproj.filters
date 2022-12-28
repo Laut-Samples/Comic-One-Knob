@@ -472,10 +472,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\mxrdistortionplus\Source\Distortion.cpp">
+    <ClCompile Include="..\..\Source\Distortion.cpp">
       <Filter>Comic Crusher\Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\mxrdistortionplus\Source\Clipping.cpp">
+    <ClCompile Include="..\..\Source\Clipping.cpp">
       <Filter>Comic Crusher\Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\PluginProcessor.cpp">
@@ -2703,6 +2703,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\Distortion.h">
+      <Filter>Comic Crusher\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Clipping.h">
+      <Filter>Comic Crusher\Source</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SVFilter.h">
       <Filter>Comic Crusher\Source</Filter>
     </ClInclude>
@@ -2722,12 +2728,6 @@
       <Filter>Comic Crusher\Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\DistKI.h">
-      <Filter>Comic Crusher\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\mxrdistortionplus\Source\Distortion.h">
-      <Filter>Comic Crusher\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\mxrdistortionplus\Source\Clipping.h">
       <Filter>Comic Crusher\Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\PluginProcessor.h">

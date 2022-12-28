@@ -5,6 +5,10 @@
               companyName="ComicVst" pluginFormats="buildAU,buildStandalone,buildVST,buildVST3">
   <MAINGROUP id="bHXukm" name="Comic Crusher">
     <GROUP id="{B74589F9-3802-ED21-F6D9-E6DF3BC6B1C4}" name="Source">
+      <FILE id="EigarU" name="Distortion.h" compile="0" resource="0" file="Source/Distortion.h"/>
+      <FILE id="HgpY1M" name="Distortion.cpp" compile="1" resource="0" file="Source/Distortion.cpp"/>
+      <FILE id="T1SjQB" name="Clipping.cpp" compile="1" resource="0" file="Source/Clipping.cpp"/>
+      <FILE id="sFvt4E" name="Clipping.h" compile="0" resource="0" file="Source/Clipping.h"/>
       <FILE id="C8p1uE" name="SVFilter.h" compile="0" resource="0" file="Source/SVFilter.h"/>
       <FILE id="nlHxnc" name="Distortionviator.h" compile="0" resource="0"
             file="Source/Distortionviator.h"/>
@@ -13,10 +17,6 @@
       <FILE id="OOYNiD" name="BrickWall.h" compile="0" resource="0" file="Source/BrickWall.h"/>
       <FILE id="HcnQv0" name="Overdrive.h" compile="0" resource="0" file="Source/Overdrive.h"/>
       <FILE id="BbRfGo" name="DistKI.h" compile="0" resource="0" file="Source/DistKI.h"/>
-      <FILE id="sjnBd1" name="Distortion.cpp" compile="1" resource="0" file="../../mxrdistortionplus/Source/Distortion.cpp"/>
-      <FILE id="MgIXnD" name="Distortion.h" compile="0" resource="0" file="../../mxrdistortionplus/Source/Distortion.h"/>
-      <FILE id="dSUslS" name="Clipping.h" compile="0" resource="0" file="../../mxrdistortionplus/Source/Clipping.h"/>
-      <FILE id="wLcTpk" name="Clipping.cpp" compile="1" resource="0" file="../../mxrdistortionplus/Source/Clipping.cpp"/>
       <FILE id="P5oGNH" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="RnfPsJ" name="PluginProcessor.h" compile="0" resource="0"

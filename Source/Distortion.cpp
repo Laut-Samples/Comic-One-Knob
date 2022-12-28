@@ -4,6 +4,7 @@
 #include "Distortion.h"
 
 //==============================================================================
+
 Distortion::Distortion(float disKnob)
 :Fs(44100.f),
  Ts(1.f / Fs),

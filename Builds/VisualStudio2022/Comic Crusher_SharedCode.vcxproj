@@ -137,8 +137,8 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\mxrdistortionplus\Source\Distortion.cpp"/>
-    <ClCompile Include="..\..\..\..\mxrdistortionplus\Source\Clipping.cpp"/>
+    <ClCompile Include="..\..\Source\Distortion.cpp"/>
+    <ClCompile Include="..\..\Source\Clipping.cpp"/>
     <ClCompile Include="..\..\Source\PluginProcessor.cpp"/>
     <ClCompile Include="..\..\Source\PluginEditor.cpp"/>
     <ClCompile Include="C:\JUCE\modules\juce_audio_basics\buffers\juce_AudioChannelSet.cpp">
@@ -2205,6 +2205,8 @@
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_gui_extra.cpp"/>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\Distortion.h"/>
+    <ClInclude Include="..\..\Source\Clipping.h"/>
     <ClInclude Include="..\..\Source\SVFilter.h"/>
     <ClInclude Include="..\..\Source\Distortionviator.h"/>
     <ClInclude Include="..\..\Source\CompressorKI.h"/>
@@ -2212,8 +2214,6 @@
     <ClInclude Include="..\..\Source\BrickWall.h"/>
     <ClInclude Include="..\..\Source\Overdrive.h"/>
     <ClInclude Include="..\..\Source\DistKI.h"/>
-    <ClInclude Include="..\..\..\..\mxrdistortionplus\Source\Distortion.h"/>
-    <ClInclude Include="..\..\..\..\mxrdistortionplus\Source\Clipping.h"/>
     <ClInclude Include="..\..\Source\PluginProcessor.h"/>
     <ClInclude Include="..\..\Source\PluginEditor.h"/>
     <ClInclude Include="C:\JUCE\modules\juce_audio_basics\audio_play_head\juce_AudioPlayHead.h"/>

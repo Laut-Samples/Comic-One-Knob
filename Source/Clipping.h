@@ -7,6 +7,7 @@
 //==============================================================================
 /*
 */
+
 class Clipping {
 public:
     explicit Clipping(float levelKnob);
