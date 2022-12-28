@@ -184,7 +184,7 @@ void Comic_OneKnobAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer
                 
                 for (int n = 0; n < buffer.getNumSamples(); ++n)
                 {
-                    float x = buffer.getReadPointer(channel)[n];
+                    int x = buffer.getReadPointer(channel)[n];
                     
                     auto input = channelData[n];
                     auto cleanOut = channelData[n];
@@ -214,11 +214,21 @@ void Comic_OneKnobAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer
                         buffer.getWritePointer(channel)[n] = x;
                     }
                         
-                    if (menuChoice == 2)      // H File
+                    if (menuChoice == 2)      // H File Dist Algo
                     {
+                        
                     float ds = distortion.processSample(x);
                         //float o = tone.processSample(dis);
                         buffer.getWritePointer(channel)[n] = clipping.processSample(ds);
+                        
+                        if (input > thresh)
+                        {
+                            input = 1.0f - expf(-input);
+                        }
+                        else
+                        {
+                            input = -1.0f + expf(input);
+                        }
                     }
                     
                     
@@ -236,9 +246,7 @@ void Comic_OneKnobAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer
                         {
                             input = input;
                         }
-                        brickwall.process(buffer.getWritePointer(1), buffer.getNumSamples());
-                        brickwall.process(buffer.getWritePointer(0), buffer.getNumSamples());
-                        
+          
                     }
                      
                     
@@ -273,7 +281,7 @@ void Comic_OneKnobAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer
                         
                     {
                         distki.setGain(mix);
-                        distki.setThreshold(-thresh);
+                        distki.setThreshold(thresh);
                         distki.process(buffer.getWritePointer(1), buffer.getNumSamples());
                         distki.process(buffer.getWritePointer(0), buffer.getNumSamples());
                     }
@@ -322,18 +330,18 @@ void Comic_OneKnobAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer
     juce::dsp::ProcessContextReplacing<float> rightContext(rightBlock);
     
     
-    if(menuChoice == 8)
-        
-    {
-    phaserki.setWetDryMix(mix);
-//    phaserki.setFeedback(0);
-//    phaserki.setDepth(0);
-//    phaserki.setRate(0);
-    phaserki.setLfoWaveform(3);
-    phaserki.setLfoFrequency(thresh);
-    phaserki.setFilterType(2);
-//    phaserki.process(context);
-    }
+//    if(menuChoice == 8)
+//        
+//    {
+//    phaserki.setWetDryMix(mix);
+////    phaserki.setFeedback(0);
+////    phaserki.setDepth(0);
+////    phaserki.setRate(0);
+//    phaserki.setLfoWaveform(3);
+//    phaserki.setLfoFrequency(thresh);
+//    phaserki.setFilterType(2);
+////    phaserki.process(context);
+//    }
     
     
     

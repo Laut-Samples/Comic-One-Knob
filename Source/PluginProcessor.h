@@ -120,6 +120,7 @@ public:
     
     void updatePhaseDelays(int numPhaserStages, double sampleRate);
     
+    
 private:
 
     juce::Reverb reverb;

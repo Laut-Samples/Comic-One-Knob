@@ -9,18 +9,18 @@ class DistKI
 public:
     // Constructor
     DistKI()
-        : gain (1.0f), threshold (1.0f)
+  
     {
     }
 
     // Sets the gain of the distortion effect
-    void setGain (float newGain)
+    void setGain (int newGain)
     {
         gain = newGain;
     }
 
     // Sets the threshold of the distortion effect
-    void setThreshold (float newThreshold)
+    void setThreshold (int newThreshold)
     {
         threshold = newThreshold;
     }
@@ -38,21 +38,28 @@ public:
 
 private:
     // Applies the distortion effect to a single sample
-    float distort (float x)
+    int distort (int x)
     {
+        // Convert the input sample to a fixed-point value
+        int xFixed = (int)(x * (1 << 15));
+
         // Clip the input sample to the threshold level
-        x = std::clamp (x, -threshold, threshold);
+        xFixed = std::clamp (xFixed, -threshold, threshold);
 
         // Apply the gain to the input sample
-        x *= gain;
+        xFixed = (xFixed * gain) >> 15;
+
+        // Convert the distorted sample back to a floating-point value
+        float xDistorted = (float)xFixed / (float)(1 << 15);
 
         // Return the distorted sample
-        return x;
+        return xDistorted;
     }
 
-    // Gain of the distortion effect
-    float gain;
+    // Gain of the distortion effect, stored as a 16-bit fixed-point value
+    int gain;
 
-    // Threshold level of the distortion effect
-    float threshold;
+    // Threshold level of the distortion effect, stored as a 16-bit fixed-point value
+    int threshold;
+
 };

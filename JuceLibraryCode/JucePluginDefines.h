@@ -11,7 +11,7 @@
 // Audio plugin settings..
 
 #ifndef  JucePlugin_Build_VST
- #define JucePlugin_Build_VST              0
+ #define JucePlugin_Build_VST              1
 #endif
 #ifndef  JucePlugin_Build_VST3
  #define JucePlugin_Build_VST3             1
@@ -38,13 +38,13 @@
  #define JucePlugin_Enable_IAA             0
 #endif
 #ifndef  JucePlugin_Name
- #define JucePlugin_Name                   "Comic_OneKnob"
+ #define JucePlugin_Name                   "Comic Crusher"
 #endif
 #ifndef  JucePlugin_Desc
- #define JucePlugin_Desc                   "Comic_OneKnob"
+ #define JucePlugin_Desc                   "Comic Crusher"
 #endif
 #ifndef  JucePlugin_Manufacturer
- #define JucePlugin_Manufacturer           "yourcompany"
+ #define JucePlugin_Manufacturer           "ComicVst"
 #endif
 #ifndef  JucePlugin_ManufacturerWebsite
  #define JucePlugin_ManufacturerWebsite    ""
@@ -98,16 +98,16 @@
  #define JucePlugin_AUSubType              JucePlugin_PluginCode
 #endif
 #ifndef  JucePlugin_AUExportPrefix
- #define JucePlugin_AUExportPrefix         Comic_OneKnobAU
+ #define JucePlugin_AUExportPrefix         ComicCrusherAU
 #endif
 #ifndef  JucePlugin_AUExportPrefixQuoted
- #define JucePlugin_AUExportPrefixQuoted   "Comic_OneKnobAU"
+ #define JucePlugin_AUExportPrefixQuoted   "ComicCrusherAU"
 #endif
 #ifndef  JucePlugin_AUManufacturerCode
  #define JucePlugin_AUManufacturerCode     JucePlugin_ManufacturerCode
 #endif
 #ifndef  JucePlugin_CFBundleIdentifier
- #define JucePlugin_CFBundleIdentifier     com.yourcompany.Comic_OneKnob
+ #define JucePlugin_CFBundleIdentifier     com.ComicVst.ComicCrusher
 #endif
 #ifndef  JucePlugin_RTASCategory
  #define JucePlugin_RTASCategory           0
@@ -125,7 +125,7 @@
  #define JucePlugin_RTASDisableMultiMono   0
 #endif
 #ifndef  JucePlugin_AAXIdentifier
- #define JucePlugin_AAXIdentifier          com.yourcompany.Comic_OneKnob
+ #define JucePlugin_AAXIdentifier          com.ComicVst.ComicCrusher
 #endif
 #ifndef  JucePlugin_AAXManufacturerCode
  #define JucePlugin_AAXManufacturerCode    JucePlugin_ManufacturerCode
@@ -149,7 +149,7 @@
  #define JucePlugin_IAASubType             JucePlugin_PluginCode
 #endif
 #ifndef  JucePlugin_IAAName
- #define JucePlugin_IAAName                "yourcompany: Comic_OneKnob"
+ #define JucePlugin_IAAName                "ComicVst: Comic Crusher"
 #endif
 #ifndef  JucePlugin_VSTNumMidiInputs
  #define JucePlugin_VSTNumMidiInputs       16

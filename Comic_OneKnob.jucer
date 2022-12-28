@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="irV9PT" name="Comic_OneKnob" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="1" jucerFormatVersion="1" cppLanguageStandard="17">
-  <MAINGROUP id="bHXukm" name="Comic_OneKnob">
+<JUCERPROJECT id="irV9PT" name="Comic Crusher" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" jucerFormatVersion="1" cppLanguageStandard="17"
+              companyName="ComicVst" pluginFormats="buildAU,buildStandalone,buildVST,buildVST3">
+  <MAINGROUP id="bHXukm" name="Comic Crusher">
     <GROUP id="{B74589F9-3802-ED21-F6D9-E6DF3BC6B1C4}" name="Source">
       <FILE id="C8p1uE" name="SVFilter.h" compile="0" resource="0" file="Source/SVFilter.h"/>
       <FILE id="nlHxnc" name="Distortionviator.h" compile="0" resource="0"
@@ -29,9 +30,9 @@
             file="../../../Desktop/ComicOneKnob.png"/>
     </GROUP>
   </MAINGROUP>
-  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
   <EXPORTFORMATS>
-    <XCODE_MAC targetFolder="Builds/MacOSX">
+    <XCODE_MAC targetFolder="Builds/MacOSX" vstLegacyFolder="../../../Downloads/VST_SDK 3/vst3sdk">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="Comic_OneKnob"/>
         <CONFIGURATION isDebug="0" name="Release" targetName="Comic_OneKnob"/>
