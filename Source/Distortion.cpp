@@ -1,12 +1,4 @@
-/*
-  ==============================================================================
 
-    Distortion.cpp
-    Created: 27 Aug 2021 10:22:33am
-    Author:  radal
-
-  ==============================================================================
-*/
 
 #include <JuceHeader.h>
 #include "Distortion.h"
@@ -16,8 +8,8 @@ Distortion::Distortion(float disKnob)
 :Fs(44100.f),
  Ts(1.f / Fs),
  C1(47.e-9),
- x1(0.f),
  R1(Ts / (2.f*C1)),
+ x1(0.f),
  R3(4.7e3),
  R4(1.e6),
  potDis(0.f),
